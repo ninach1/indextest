@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+</head>
+<body>
+<p> HU GIO </p>
+<script type ="text/javascrupt">
+function AlertIt(){
+	//亂數
+	var myrandom = Math.round(Math.random()*2)
+	var messages = new Array()
+	//
+	messages[0] = "你好"
+	messages[1] = "棒棒"
+	messages[2] = "000"
+	//
+	var links = new Array()
+	links[0] = "http://www.youtube.com/"
+	links[1] = "http://www.google.com/"
+	links[2] = "http://www.yahoo.com/"
+	links[3] = "http://www.yahoo.com/"
+	//
+	var answer = confirm(messages[myrandom])
+	if (answer){
+		window.location = links[myrandom]
+	}else{
+		window.location = links[3]
+	}
+}
+
+</script>
+
+<table width="100%" height="100%" border="0">
+<tr>
+<td align="center" valign="middle">
+<a herf = "javascript:AlertIt();"> <img src ="../index/unnamed.png" width="20%" height="auto"> <p>按我</p></a> </td>
+</tr>
+</table>
+
+</body>
+</html>
